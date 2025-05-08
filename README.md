@@ -17,7 +17,7 @@ python -c "import tensorflow.keras; print('tensorflow.keras is working!')"
 
 # To begin training, run
 
-python scripts/training.py
+python preprocess.py
 
 # Folder structure
 
@@ -25,26 +25,7 @@ face-recognition/
 │
 ├── data/
 │ └── lfw-deepfunneled/ # Extracted LFW deep-funneled images
+└── preprocess.py # Preprocessing functions
 │
-├── datasets/
-│ └── lfw_dataset.py # Dataset loading and preprocessing
-│
-├── models/
-│ └── cnn_model.py # CNN model definition
-│
-├── notebooks/
-│ └── EDA.ipynb # For exploratory data analysis
-│
-├── outputs/
-│ ├── model/ # Saved trained model
-│ └── logs/ # Training logs (TensorBoard etc.)
-│
-├── scripts/
-│ ├── train.py # Training pipeline
-│ └── predict.py # Inference script
-│
-├── utils/
-│ └── preprocess.py # Preprocessing functions
-│
-├── requirements.txt # Dependencies
+├── face-recognition-app.yaml # Env / Dependencies
 └── README.md # Project overview
