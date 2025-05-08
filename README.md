@@ -6,9 +6,18 @@ conda env create -f face-recognition-app.yaml
 
 conda activate face-recognition-app
 
+# For CPU compatibility mode run
+
+conda remove tensorflow tensorflow-base keras
+pip install tensorflow==2.16.2
+
+# Test
+
+python -c "import tensorflow.keras; print('tensorflow.keras is working!')"
+
 # To begin training, run
 
-python scripts/train.py
+python scripts/training.py
 
 # Folder structure
 
